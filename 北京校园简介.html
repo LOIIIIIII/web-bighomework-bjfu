@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css库/北京校园简介.css">
+    <link rel="stylesheet" href="../css库/北京校园简介2.css">
+    <style>
+        .show-message-box {
+            display: block;
+            position: fixed;
+            top: 50px;
+            right: 50px;
+            width: 200px;
+            height: 200px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .and {
+            position: relative;
+            top: 20;
+        }
+    </style>
+    <script src="../js库/animate.js"></script>
+    <script src="../js库/北京学校简介.js"></script>
+    <script src="../js库/北京学校简介1.js"></script>
+    <script src="../js库/北京学校简介2.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navder">
+            <div class="logo"><img src="../school/logo.jpeg" alt="北京的大学"></div>
+            <div class="nav">
+                <span class="movercloud"></span>
+                <ul class="right">
+                    <li><a href=" #part1">school页面介绍</a></li>
+                    <li><a href="#part2">清华北大</a></li>
+                    <!-- <li><a href="#part2">清华大学</a></li> -->
+                    <li><a href="#part3">北航人大</a></li>
+                    <!-- <li><a href="#part3">中国人民大学</a></li> -->
+                    <li><a href="#part4">北京林业大学</a></li>
+                    <li><a href="./index.html">返回首页</a></li>
+                    <li><a href="./sign_in_or_sign_up.html">登录界面</a></li>
+                </ul>
+                <div id="ad" class="show-message-box">
+                    <div class="and">
+                        <p>注意你必须点击导航栏才能跳转界面</p>
+                        <p>下面的图片均有效果捏,请点击试一试</p>
+                    </div>
+                    <span class="close-button" onclick="closeMessageBox();">&times;</span>
+                </div>
+            </div>
+        </div>
+        <main>
+            <section id="part1">
+                <div class="backgroud">
+                    <div class="viedobox"><video src="./viedo/beijnggaoxiao.mp4" autoplay loop muted></video></div>
+                    <div class="textatu">
+                        <h1>欢迎参观北京高校</h1>
+                    </div>
+                </div>
+                <div class="gallary">
+                    <div class="img-box">
+                        <img src="../school/qinghua.jpeg" alt="1.jpg">
+                        <img class="overview-img" src="../school/qinghua.jpeg" alt="1.jpg">
+                    </div>
+                    <div class="img-box">
+                        <img src="../school/peking.jpeg" alt="2.jpg">
+                        <img class="overview-img" src="../school/peking.jpeg" alt="2.jpg">
+                    </div>
+                    <div class="img-box">
+                        <img src="../school/beihang.jpeg" alt="3.jpg">
+                        <img class="overview-img" src="../school/beihang.jpeg" alt="3.jpg">
+                    </div>
+                    <div class="img-box">
+                        <img src="../school/renda.jpeg" alt="4.jpg">
+                        <img class="overview-img" src="../school/renda.jpeg" alt="4.jpg">
+                    </div>
+                    <div class="img-box">
+                        <img src="../school/bjfu.jpeg" alt="5.jpg">
+                        <img class="overview-img" src="../school/bjfu.jpeg" alt="4.jpg">
+                    </div>
+                </div>
+                <div class="overlay">
+                    <!-- 关闭按钮 -->
+                    <div class="close-btn">X</div>
+                </div>
+            </section>
+            <section id="part2">
+                <div class="left-text">
+                    <h2>Peking university</h2>
+                    <div class="text">
+                        <p>北京大学创办于1898年，初名京师大学堂，是中国第一所国立综合性大学，也是当时中国最高教育行政机关。辛亥革命后，于1912年改为现名。
+                        </p>
+                        <p>作为新文化运动的中心和“五四”运动的策源地，作为中国最早传播马克思主义和民主科学思想的发祥地，作为中国共产党最早的活动基地，北京大学为民族的振兴和解放、国家的建设和发展、社会的文明和进步做出了不可替代的贡献，在中国走向现代化的进程中起到了重要的先锋作用。爱国、进步、民主、科学的传统精神和勤奋、严谨、求实、创新的学风在这里生生不息、代代相传。
+                        </p>
+                        <div class="img1">
+                            <div class="box duration">
+                                <h2>请点击看看</h2>
+                            </div>
+                        </div>
+                        <p>1917年，著名教育家蔡元培出任北京大学校长，他“循思想自由原则，取兼容并包主义”，对北京大学进行了卓有成效的改革，促进了思想解放和学术繁荣。陈独秀、李大钊、毛泽东以及鲁迅、胡适等一批杰出人才都曾在北京大学任职或任教。
+                        </p>
+                        <p>1937年卢沟桥事变后，北京大学与清华大学、南开大学南迁长沙，共同组成长沙临时大学。不久，临时大学又迁到昆明，改称国立西南联合大学。抗日战争胜利后，北京大学于1946年10月在北平复学
+                        </p>
+
+                    </div>
+                </div>
+                <div class="right-text">
+                    <h2>Tsinghua university</h2>
+                    <div class="text">
+                        <p>
+                            清华大学的前身清华学堂始建于1911年，1912年更名为清华学校。1928年更名为国立清华大学。1937年抗日战争全面爆发后南迁长沙，与北京大学、南开大学组建国立长沙临时大学，1938年迁至昆明改名为国立西南联合大学。1946年迁回清华园，设有文、法、理、工、农等5个学院、26个系。
+                        </p>
+                        <p>面向未来，清华大学将秉持“自强不息、厚德载物”的校训和“行胜于言”的校风，坚持“中西融汇、古今贯通、文理渗透”的办学风格和“又红又专、全面发展”的培养特色，弘扬“爱国奉献、追求卓越”传统和“人文日新”精神，以习近平新时代中国特色社会主义思想为指引，深入学习贯彻党的十九大精神，坚持正确方向、坚持立德树人、坚持服务国家、坚持改革创新，持续深入推进综合改革和“双一流”建设，实现内涵式发展，努力在创建世界一流大学方面走在前列，为国家发展、人民幸福、人类文明进步作出新的更大的贡献。
+                        </p>
+                        <div class="bottombox">
+                            <div class="autob">
+                                <ul class="bz">
+                                    <li>
+                                        <img src="../水木清华/p1.jpeg" height="470px">
+                                    </li>
+                                    <li><img src="../水木清华/p2.jpeg" height="470px"></li>
+                                    <li><img src="../水木清华/p3.jpeg" height="470px"></li>
+                                    <li><img src="../水木清华/p4.jpg" height="470px"></li>
+                                    <li><img src="../水木清华/p5.jpeg" height="470px"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="part3">
+                <div class="left-text1">
+                    <div class="toppart">
+                        <div class="lefttop">
+                            <div class="topba">
+                                <div class="bp">
+
+                                    <!-- <div class="background"></div> -->
+                                    <div class="bpa">
+                                        <div class="bpa1"></div>
+                                    </div>
+                                    <div class="bpb">
+                                        <div class="bpb1"></div>
+                                    </div>
+                                    <div class="bpc">
+                                        <div class="bpc1"></div>
+                                    </div>
+                                    <!-- <div class="bplogo"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="righttop">
+                            <div>
+                                <h2>青春正当时，我们没有理由不奋斗</h2>
+                            </div>
+                            <div>
+                                <h2>Beijing University of Aeronautics and Astronautics</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottompart">
+                        <p>1951年，为培养航空建设人才，国家决定将北洋大学、厦门大学、西北工学院航空系并入清华大学航空工程学系，成立清华大学航空学院，将云南大学航空系并入四川大学航空系，将西南工专航空科并入华北大学工学院航空系。1952年，根据全国高等学校院系调整的要求，设立北京航空学院，由北京工业学院航空系（1951年11月18日，华北大学工学院更名为北京工业学院）、清华大学航空学院、四川大学航空系合并成立。1952年10月25日，在北京工业学院礼堂（原中法大学旧址）举行了北京航空学院成立大会。1988年，北京航空学院更名为北京航空航天大学（简称北航）。
+                        </p>
+                        <p>
+                            北航是新中国第一所航空航天高等学府，现隶属于工业和信息化部。学校所在地北京，分为学院路校区、沙河校区，占地3000多亩，总建筑面积230余万平方米。建校以来，北航一直是国家重点建设的高校，是全国第一批16所重点高校之一，也是80年代恢复学位制度后全国第一批设立研究生院的22所高校之一，首批进入“211工程”，2001年进入“985工程”，2017年入选国家“双一流”建设高校名单。学校第十六次党员代表大会提出以建设扎根中国大地的世界一流大学为发展目标。
+                        </p>
+                        <p>七十载空天报国，新时代逐梦一流。学校坚持以习近平新时代中国特色社会主义思想为指导，深入学习贯彻党的二十大精神，增强“四个意识”、坚定“四个自信”、做到“两个维护”，以党的政治建设，把党的领导贯穿办学治校、教书育人全过程，强化一流能力、培养一流人才、做出一流贡献，奋力谱写建设中国特色世界一流大学新篇章，为全面建设社会主义现代化国家、全面推进中华民族伟大复兴而团结奋斗
+                        </p>
+                    </div>
+                </div>
+                <div class="right-text1">
+                    <h2>Renmin University of China</h2>
+                    <div class="boxx">
+                        <p>中国人民大学（Renmin University of China）是中国共产党创办的第一所新型正规大学，直属于教育部，由教育部与北京市共建。现任党委书记为张东刚、校长为林尚立。</p>
+                        <p>中国人民大学坚持立足中国实际，解决中国问题，以回答中国之问、世界之问、人民之问、时代之问为学术己任，致力于研究重大政治、经济、文化和社会问题，为国家经济建设和社会发展提供强大的理论保证和有力的智力支持，成为国家重要智库。学校相关学科专家学者参与了新中国宪法、民法典、刑法等所有重要法律，以及历次财税体制改革等国家重要方案的起草和修改工作。经中央批准，学校设立了全国首家习近平新时代中国特色社会主义思想研究院和全国首家党史党建研究院；国家发展与战略研究院成为首批试点建设的国家高端智库，2019年在首次国家高端智库综合评估中成为唯一一家进入第一档次的高校智库；重阳金融研究院和首都发展与战略研究院也是具有重要影响的中国特色新型智库。
+                        </p>
+                        <div class="imgpart">
+                            <div><img src="../school/chinarenmin.png" alt=""></div>
+                            <div><img src="../school/reminxiaohui.png" alt=""></div>
+                            <div><img src="../school/xiaoyuan.jpeg" alt=""></div>
+                        </div>
+                        <p>当前，中国人民大学全体师生员工正高举中国特色社会主义伟大旗帜，以习近平新时代中国特色社会主义思想为指导，全面学习贯彻党的二十大精神，深入学习贯彻习近平总书记在中国人民大学考察调研时重要讲话精神和习近平总书记致中国人民大学建校80周年贺信精神，落实学校第十五次党代会部署，不忘“为党育人、为国育才”光荣使命，坚守“听党话、跟党走”精神信念，弘扬“党办的大学让党放心、人民的大学不负人民”精神品格，紧扣“六面旗帜”，围绕“八项工作”，全面实施“新路建设十大工程”，举旗帜、当旗手、做先锋，坚定不移走好建设中国特色、世界一流大学新路，加快建设“让党放心、人民满意、世界一流”的中国人民大学，为全面建设社会主义现代化国家、全面推进中华民族伟大复兴作出新的更大贡献！
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="part4">
+                <div class="toptitle">
+                    <h2>Beijing Forest University</h2>
+                </div>
+                <div class="bottompart4">
+                    <div class="left4">
+                        <div class="wanhuatong">
+                            <div style="transform: rotateY(0deg) translateZ(300px);">
+                                <img src="../wanhuatong/1.jpeg">
+                            </div>
+                            <div style="transform: rotateY(40deg) translateZ(300px);">
+                                <img src="../wanhuatong/2.jpg">
+                            </div>
+                            <div style="transform: rotateY(80deg) translateZ(300px);">
+                                <img src="../wanhuatong/3.jpeg">
+                            </div>
+                            <div style="transform: rotateY(120deg) translateZ(300px);">
+                                <img src="../wanhuatong/7.jpeg">
+                            </div>
+                            <div style="transform: rotateY(160deg) translateZ(300px);">
+                                <img src="../wanhuatong/4.jpeg">
+                            </div>
+                            <div style="transform: rotateY(200deg) translateZ(300px);">
+                                <img src="../wanhuatong/5.jpeg">
+                            </div>
+                            <div style="transform: rotateY(240deg) translateZ(300px);">
+                                <img src="../wanhuatong/8.jpeg">
+                            </div>
+                            <div style="transform: rotateY(280deg) translateZ(300px);">
+                                <img src="../wanhuatong/6.jpeg">
+                            </div>
+                            <div style="transform: rotateY(320deg) translateZ(300px);">
+                                <img src="../wanhuatong/9.jpeg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right4">
+                        <p>北京林业大学是教育部直属、教育部与国家林业和草原局共建的全国重点大学，是国家首批“211工程”重点建设高校和国家“优势学科创新平台”建设项目试点高校，是国家“双一流”建设高校。</p>
+                        <p>历史积淀深厚。学校办学历史可追溯至1902年的京师大学堂农业科林学目。1952年全国高校院系调整，北京农业大学森林系与河北农学院森林系合并，成立北京林学院。1956年，北京农业大学造园系和清华大学建筑系部分并入学校。1960年被列为全国重点高等院校，1981年成为首批具有博士、硕士学位授予权的高校。1985年更名为北京林业大学。1996年被国家列为首批“211工程”重点建设高校。2000年，由原国家林业局划归教育部直属管理。同年，经教育部批准试办研究生院。2001年获教育部和国家林业局共建支持。2004年正式成立研究生院。2005年获得本科自主选拔录取资格。2008年，成为国家“优势学科创新平台”建设项目试点高校。2011年与其他10所行业特色高校参与组建北京高科大学联盟。2012年，牵头成立中国第一个林业协同创新中心——“林木资源高效培育与利用”协同创新中心。2016年，学校“林木分子设计育种高精尖创新中心”入选北京市第二批高精尖创新中心。2017年，首批进入国家“双一流”建设高校行列，林学和风景园林学两个学科入选“双一流”建设学科名单。2019年，生态修复工程学、城乡人居生态环境学入选北京高校高精尖学科建设名单。2021年，成功获批雄安校区，成为首批入驻雄安的高校。2022年，入选国家第二轮“双一流”建设高校名单，林学、风景园林学两个学科入选国家第二轮“双一流”建设学科名单。
+                        </p>
+                        <p>办学特色鲜明。学校以生物学、生态学为基础，以林学、风景园林学、林业工程、草学和农林经济管理为特色，是农、理、工、管、经、文、法、哲、教、艺等多门类协调发展的全国重点大学。长期以来，学校秉承“知山知水，树木树人”校训，践行“替河山装成锦绣，把国土绘成丹青”理念，为国家培养了20余万名高级专门人才和一批外国留学生，其中包括16名两院院士为代表的一大批杰出科技专家和管理人才，他们为我国生态文明建设、林草事业和经济社会发展做出了卓越贡献。
+                        </p>
+                        <p>目前，学校正以办人民满意的高等教育为宗旨，按照学校第十一次党员代表大会提出的新时代“三步走”战略，全面贯彻党的教育方针，构建“一校两区”新发展格局，为建设扎根中国大地的世界一流林业大学而努力奋斗。
+
+
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <div class="little-bing" id="text"></div>
+
+        </main>
+        <footer>
+            <p>LiMinxue&nbsp;|&nbsp;李敏学&nbsp;|&nbsp;BJFU&nbsp;|&nbsp;221002509</p>
+            <span>命运对勇士低语，你无法抵御风暴。勇士低声回应，我就是风暴</span>
+
+        </footer>
+    </div>
+    <script>
+        function closeMessageBox() {
+            var messageBox = document.getElementById("ad");
+            console.log(messageBox);
+            messageBox.style.display = "none";
+            // messageBox.classList.remove("show-message-box");
+        }
+    </script>
+</body>
+
+</html>

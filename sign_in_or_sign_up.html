@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家乡北京</title>
+    <link rel="stylesheet" href="../css库/first.css" type="text/css" />
+    <link rel="stylesheet" href="../css库/first2.css">
+    <style>
+        .message-box {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            border-radius: 2rem;
+            display: none;
+        }
+
+
+
+        .show-message-box {
+            display: block;
+        }
+
+        .close-button {
+            position: absolute;
+            width: 40px;
+            height: 20px;
+            top: 5px;
+            right: 5px;
+            font-size: large;
+            cursor: pointer;
+        }
+
+
+        .agree-button {
+            margin-top: 20px;
+            width: 40px;
+            height: 30px;
+            font-size: large;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="topa">
+            <div class="topal">
+                <a href="./index.html" class="tal1">
+                    <h1>首页界面</h1>
+                </a>
+            </div>
+            <div class="topaa">
+                <a href="#">
+                    <h2>MINXUE</h2>
+                </a>
+            </div>
+            <div class="topar">
+                <a href="./北京校园简介.html" class="tar1">
+                    <h1>北京高校参观</h1>
+                </a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="inner_box">
+                <!-- 表单元素 -->
+                <div class="forms_wrap">
+                    <!-- 登录 -->
+                    <form action="index.html" autocomplete="off" class="sign_in">
+                        <div class="logo">
+                            <img src="../imagess/logo1.png" alt="sign_in_logo">
+                            <h4>欢迎来到北京</h4>
+                        </div>
+                        <div class="heading">
+                            <h2>请登录</h2>
+                            <h6>是否进行了注册?&nbsp;</h6>
+                            <a href="#" class="toggle">注册</a>
+                        </div>
+                        <div class="actual_form">
+                            <div class="input_wrap">
+                                <input type="text" minlength="4" autocomplete="off" required class="input_field">
+                                <label>用户名</label>
+                            </div>
+                            <div class="input_wrap">
+                                <input type="password" minlength="4" autocomplete="off" required class="input_field">
+                                <label>密码</label>
+                            </div>
+                            <div>
+                                <input type="submit" value="登录" class="sign_btn">
+                                <p class="text">
+                                    是否忘记密码？
+                                    <a href="#" onclick="passwordnogain()">找回密码</a>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- 注册 -->
+                    <form action="index.html" autocomplete="off" class="sign_up">
+                        <div class="logo">
+                            <img src="../imagess/logo1.png" alt="sign_in_logo">
+                            <h4>欢迎来到北京</h4>
+                        </div>
+                        <div class="heading">
+                            <h2>请注册</h2>
+                            <h6>是否已经拥有一个账户？</h6>
+                            <a href="#" class="toggle">登录</a>
+                        </div>
+                        <div class="actual_form">
+                            <div class="input_wrap">
+                                <input type="text" minlength="4" autocomplete="off" required class="input_field">
+                                <label>用户名</label>
+                            </div>
+                            <div class="input_wrap">
+                                <input type="text" autocomplete="off" required class="input_field">
+                                <label>邮箱</label>
+                            </div>
+                            <div class="input_wrap">
+                                <input type="text" autocomplete="off" required class="input_field">
+                                <label>电话号</label>
+                            </div>
+                            <div class="input_wrap">
+                                <input type="password" minlength="4" autocomplete="off" required class="input_field">
+                                <label>密码</label>
+                            </div>
+                            <div>
+                                <input type="submit" value="注册" class="sign_btn">
+
+                                <p class="text">
+                                    请认真阅读:
+                                    <a href="#" onclick="showMessageBox();">服务条款</a>和<a href="#"
+                                        onclick="showMessageBox();">注意事项</a>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- 轮番元素 -->
+                <div class="carousel">
+                    <div class="images_wrap">
+                        <img src="../imagess/carousel2.png" alt="" class="image img-1 show">
+                        <img src="../imagess/carousel1.png" alt="" class="image img-2">
+                        <img src="../imagess/carousel3.png" alt="" class="image img-3">
+                    </div>
+                    <div class="text_slider">
+                        <div class="text_wrap">
+                            <div class="text_group">
+                                <h2>欢迎来到北京!</h2>
+                                <h2>我将是您的导游哦!</h2>
+                                <h2>开始你的北京之旅吧!</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bullets">
+                        <span class="active" data-value="1"></span>
+                        <span data-value="2"></span>
+                        <span data-value="3"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="message-box" class="message-box">
+        <span class="close-button" onclick="closeMessageBox();">&times;</span>
+        <h2>服务条款和注意事项</h2>
+        <p>欢迎使用我们的服务。请在继续之前仔细阅读以下条款和条件：</p>
+        <p>1. 本服务的使用者应遵守所有适用的法律和法规。</p>
+        <p>2. 本服务仅供个人非商业用途使用。</p>
+        <p>3. 我们保留随时更改或终止服务的权利。</p>
+        <p>4. 请确保您已经了解并同意相关隐私政策和使用条款。</p>
+        <p>5. 请妥善保管您的账户信息，避免泄露给他人。</p>
+        <p>6. 请不要滥用本服务，包括但不限于恶意攻击、侵犯他人权益等行为。</p>
+        <p>请仔细阅读完整的服务条款和注意事项，如有疑问请联系我们。</p>
+        <button class="agree-button" onclick="agreeToTerms();">同意</button>
+    </div>
+    <script src="../js库/register.js"></script>
+    <script>
+        function showMessageBox() {
+            var messageBox = document.getElementById("message-box");
+            messageBox.classList.toggle("show-message-box");
+        }
+
+        function closeMessageBox() {
+            var messageBox = document.getElementById("message-box");
+            messageBox.classList.remove("show-message-box");
+        }
+
+        function agreeToTerms() {
+            // 在这里可以编写用户同意服务条款后的逻辑代码
+            alert("感谢您同意我们的服务条款和注意事项！");
+            closeMessageBox();
+        }
+
+        function passwordnogain() {
+            alert("对不起无法找回密码，请联系管理员！");
+        }
+    </script>
+</body>
+
+</html>
